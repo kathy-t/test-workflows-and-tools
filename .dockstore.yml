@@ -1,8 +1,9 @@
 version: 1.2
 tools:
-   - subclass: cwl
+   - name: valid-tool-name
+     subclass: cwl
      primaryDescriptorPath: /tools/Dockstore.cwl
-     publish: true
 workflows:
-   - subclass: cwl
+   - name: invalid/workflow/name
+     subclass: cwl
      primaryDescriptorPath: /workflows/HelloWorld.cwl
